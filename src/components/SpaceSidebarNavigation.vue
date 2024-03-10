@@ -62,14 +62,5 @@ const isLegacySpace = computed(() => {
         {{ $t('about') }}
       </BaseSidebarNavigationItem>
     </router-link>
-    <router-link
-      v-if="!isLegacySpace"
-      v-slot="{ isExactActive }"
-      :to="{ name: 'spaceSettings' }"
-    >
-      <BaseSidebarNavigationItem :is-active="isExactActive">
-        {{ $t('settings.header') }}
-      </BaseSidebarNavigationItem>
-    </router-link>
   </div>
 </template>
