@@ -115,18 +115,18 @@ onMounted(() => {
           slim
           @show-more="isModalStrategiesOpen = true"
         >
-          <div>
-            <p>
+          <div class="p-4">
+            <p class="mb-4">
               Se agregan a allowlist automáticamente a los miembros de AntiSAT
               que tengan uno o más POAPs de la comunidad en su Wallet. La lista
               de POAPs que permiten la participación en la DAO se actualiza cada
               que se emite un nuevo POAP de AntiSAT.
             </p>
-            <p>
+            <p class="mb-4">
               También a aquellos que tengan un NFT de Bolillo INU se les permite
               participar en la toma de decisiones de la DAO.
             </p>
-            <p>
+            <p class="mb-4">
               Puedes consultar los detalles técnicos de la estrategia de
               gobernanza aquí abajo:
             </p>
