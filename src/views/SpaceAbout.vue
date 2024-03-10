@@ -115,6 +115,22 @@ onMounted(() => {
           slim
           @show-more="isModalStrategiesOpen = true"
         >
+          <div>
+            <p>
+              Se agregan a allowlist automáticamente a los miembros de AntiSAT
+              que tengan uno o más POAPs de la comunidad en su Wallet. La lista
+              de POAPs que permiten la participación en la DAO se actualiza cada
+              que se emite un nuevo POAP de AntiSAT.
+            </p>
+            <p>
+              También a aquellos que tengan un NFT de Bolillo INU se les permite
+              participar en la toma de decisiones de la DAO.
+            </p>
+            <p>
+              Puedes consultar los detalles técnicos de la estrategia de
+              gobernanza aquí abajo:
+            </p>
+          </div>
           <div class="grid grid-cols-1 gap-0 px-0 md:gap-4 md:p-4 md:px-4">
             <StrategiesListItem
               v-for="(strategy, i) in space.strategies.slice(0, 2)"
@@ -148,14 +164,14 @@ onMounted(() => {
                 }"
                 class="cursor-help py-1"
               >
-                moderator
+                moderador
               </BasePill>
               <BasePill
                 v-if="mod.roles.includes('author')"
                 v-tippy="{ content: $t('settings.members.author.description') }"
                 class="cursor-help py-1"
               >
-                author
+                autor
               </BasePill>
             </div>
           </AboutMembersListItem>
