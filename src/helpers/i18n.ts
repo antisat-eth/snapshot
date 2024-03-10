@@ -1,9 +1,9 @@
 import { createI18n } from 'vue-i18n';
-import es from '@/locales/es-ES.json';
+import es from '@/locales/default.json';
 import languages from '@/locales/languages.json';
 import { lsRemove } from '@/helpers/utils';
 
-export let defaultLocale = 'en-US';
+export let defaultLocale = 'es-ES';
 
 export function getBrowserLocale() {
   if (typeof navigator !== 'undefined') {
@@ -35,7 +35,7 @@ export async function loadLocaleMessages(i18n, locale) {
     lsRemove('locale');
     locale = 'default';
   }
-  if (locale === 'en-US') locale = 'default';
+  if (locale === 'es-ES') locale = 'default';
 
   try {
     // load locale messages with dynamic import
@@ -66,7 +66,7 @@ const i18n = createI18n({
     }
   },
   messages: { 'es-ES': es },
-  fallbackLocale: 'en-US'
+  fallbackLocale: 'es-ES'
 });
 
 setI18nLanguage(i18n, defaultLocale);

@@ -2,6 +2,10 @@
   "en-US": {
     "name": "English"
   },
+  "es-ES": {
+    "name": "Spanish",
+    "nativeName": "Español"
+  },
   "zh-CN": {
     "name": "Chinese",
     "nativeName": "简体中文"
