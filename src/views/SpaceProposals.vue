@@ -213,7 +213,7 @@ watch(
           data-testid="create-proposal-button"
         >
           <TuneButton :primary="isFollowing" class="w-full sm:w-auto">
-            New proposal
+            Nueva Propuesta
           </TuneButton>
         </BaseLink>
       </div>
