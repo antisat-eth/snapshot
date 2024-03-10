@@ -43,7 +43,7 @@ watch(
 
           <NavbarNotifications v-if="web3Account && !domain" />
 
-          <NavbarExtras />
+          <NavbarExtras v-if="!domain" />
         </div>
       </div>
     </div>
