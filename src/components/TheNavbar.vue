@@ -30,7 +30,7 @@ watch(
             class="hidden items-center sm:block"
             style="font-size: 24px"
           >
-            snapshot
+            dao.antisat.io
           </router-link>
           <span
             v-if="env === 'demo'"
