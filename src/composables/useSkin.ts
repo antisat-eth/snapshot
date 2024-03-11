@@ -1,10 +1,8 @@
 import { SPACE_SKIN_QUERY } from '@/helpers/queries';
-import { useStorage, usePreferredColorScheme } from '@vueuse/core';
+import { useStorage } from '@vueuse/core';
 
 export const DARK = 'dark';
 export const LIGHT = 'light';
-
-const preferredColor = usePreferredColorScheme();
 
 const userTheme = useStorage('snapshot.userTheme', '');
 
@@ -17,9 +15,7 @@ function toggleUserTheme() {
 }
 
 const theme = computed(() =>
-  [DARK, LIGHT].includes(userTheme.value)
-    ? userTheme.value
-    : preferredColor.value
+  [DARK, LIGHT].includes(userTheme.value) ? userTheme.value : DARK
 );
 
 const skinClass = ref('default');
