@@ -279,9 +279,9 @@
   "proposal": {
     "castVote": "Echa tu voto",
     "vote": "Vota",
-    "startDate": "Fecha de inicio",
-    "endDate": "Fecha de fin",
-    "votingSystem": "Sistema de votación",
+    "startDate": "Inicio",
+    "endDate": "Fin",
+    "votingSystem": "Tipo",
     "privacy": "Privacidad",
     "invalidChoice": "Elección inválida",
     "postVoteModal": {
@@ -689,27 +689,27 @@
   "voting": {
     "selectVoting": "Selecciona un sistema de votación",
     "single-choice": {
-      "label": "Votación de elección única",
+      "label": "Voto único",
       "description": "Cada votante puede seleccionar solo una opción."
     },
     "approval": {
-      "label": "Votación de aprobación",
+      "label": "Voto de aprobación",
       "description": "Cada votante puede seleccionar cualquier número de opciones."
     },
     "quadratic": {
-      "label": "Votación cuadrática",
+      "label": "Voto cuadrático",
       "description": "Cada votante puede distribuir el poder de voto entre cualquier número de opciones. Los resultados se calculan de forma cuadrática."
     },
     "ranked-choice": {
-      "label": "Votación de elección clasificada",
+      "label": "Voto clasificado",
       "description": "Cada votante puede seleccionar y clasificar cualquier número de opciones. Los resultados se calculan mediante el método de recuento instantáneo."
     },
     "weighted": {
-      "label": "Votación ponderada",
+      "label": "Voto ponderado",
       "description": "Cada votante puede distribuir el poder de voto entre cualquier número de opciones."
     },
     "basic": {
-      "label": "Votación básica",
+      "label": "Voto básica",
       "description": "Votación de elección única con tres opciones: A favor, En contra o Abstención"
     }
   },
